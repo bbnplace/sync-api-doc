@@ -20,4 +20,4 @@ Response | Interpretation
 Response | Interpretation
 ---------|----------
  ANSWERED | Call was answered by the receiver 
- NO ANSWERED | Call was not answered by receiver
+ NOT ANSWERED | Call was not answered by receiver
