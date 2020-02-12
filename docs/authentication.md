@@ -4,6 +4,8 @@ Every request to Cecula Sync Cloud API requires Authentication. The first steps 
 
 An API Key encapsulates your credentials and your Dedicated number. Therefore, there will be no need to specify **originator** when sending a message, making a call or any other request.
 
+Each dedicated number you host on Cecula Sync Cloud requires a sperate API Key.
+
 An API Key looks like this:
 >**CCL.BvDwEv6oQyq7-wT.390JYJYz8Y6NftIAgjLTPppW**
 

@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+  title: Cecula Sync
+  version: '1.0'
+  description: This API enables the usage of your hosted SIM on Cecula Sync Cloud.
+  contact:
+    name: Cecula Ltd
+    url: 'https://cecula.com'
+    email: lab@cecula.com
+servers:
+  - url: 'http://cecula.com/sync/api'
+paths:
+  /flash-number:
+    post:
+      summary: Flash Number
+      tags: []
+      responses: {}
+      operationId: post-flash-number
+      description: This endpoint is used to send a missed call to user number.
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: 'Authorization: Bearer {{your-api-key}}'
+          description: ''
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                receiver:
+                  type: string
+              required:
+                - receiver
+            examples:
+              Example:
+                value:
+                  receiver: 8183172770
+        description: The request body contains only the mobile number that the message is targeted at
+components:
+  schemas: {}
+  securitySchemes: {}
